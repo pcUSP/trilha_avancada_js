@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Forca</h1>
+        <div class="word" id="word"></div>
+        <div class="wrong-letters" id="wrong-letters"></div>
+        <div class="figure-container">
+            <svg height="250" width="200" class="figure-container__figure" id="hangman">
+                <!-- cabeça -->
+                <circle cx="100" cy="50" r="20" stroke="black" stroke-width="2" fill="white" id="head"></circle>
+                <!-- corpo -->
+                <line x1="100" y1="70" x2="100" y2="120" stroke="black" stroke-width="2" id="body"></line>
+                <!-- braços -->
+                <line x1="80" y1="90" x2="120" y2="90" stroke="black" stroke-width="2" id="left-arm"></line>
+                <!-- pernas -->
+                <line x1="80" y1="150" x2="100" y2="120" stroke="black" stroke-width="2" id="right-arm"></line>
+                <!-- pernas -->
+                <line x1="120" y1="150" x2="100" y2="120" stroke="black" stroke-width="2" id="left-leg"></line>
+                <!-- pernas -->
+                <line x1="80" y1="150" x2="100" y2="120" stroke="black" stroke-width="2" id="right-leg"></line>
+            </svg>
+        </div>
+        <div class="final-message" id="final-message"></div>
+        <button class="btn-reset" onclick="startGame()">Iniciar Jogo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

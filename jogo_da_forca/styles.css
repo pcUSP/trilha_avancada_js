@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.wrong-letters {
+  margin: 20px 0;
+}
+
+.figure-container {
+  margin-top: 20px;
+}
+
+.final-message {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.btn-reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-reset:hover {
+  background-color: #0056b3;
+}
